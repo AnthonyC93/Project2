@@ -4,30 +4,46 @@
 <head>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Staatliches" rel="stylesheet">
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
-  <!-- <link type="text/css" rel="stylesheet" href="./css/" /> -->
+  <link type="text/css" rel="stylesheet" href="./style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-  <div class="parallax-container">
+  <div class="parallax-container center-align">
     <div class="parallax"><img src="../assets/images/image.png"></div>
+    <div class='row'>
+      <div class='col s12'>
+        <h1>Road Trip Planner</h1>
+      </div>
+    </div>
+
+    <div class='row'>
+        <div class='col s6 right-align'>
+          <a href='#'class='btn-large btn waves-effect'>Saved Trips</a>
+        </div>
+        <div class='col s6 left-align'>
+          <a href='#startNew'class='btn-large btn waves-effect'>Start New Trip</a>
+        </div>
+    </div>
   </div>
 
+  <a id='startNew'></a>
   <div class='row'>
     <div class='container'>
       <div class='col s12 center-align'>
-        <h2>Tell us where you're going. We'll get you there</h2>
+        <h2>Tell us where you're going. <br><br>We'll get you there</h2>
         <div class="row">
             <div class="input-field col s6">
-              <input placeholder="From" id="first_name" type="text" class="validate">
-              <label for="first_name">First Name</label>
+              <input placeholder="Starting Location" id="first_name" type="text" class="validate">
+              <!-- <label for="first_name">First Name</label> -->
             </div>
             <div class="input-field col s6">
-              <input placeholder="To"id="last_name" type="text" class="validate">
-              <label for="last_name">Last Name</label>
+              <input placeholder="Destination"id="last_name" type="text" class="validate">
+              <!-- <label for="last_name">Last Name</label> -->
             </div>
           </div>
       </div>
@@ -43,6 +59,10 @@
     $(document).ready(function(){
     $('.parallax').parallax();
     });
+
+    // $(document).ready(function(){
+    // $('.scrollspy').scrollSpy();
+    //  });
   </script>
   <!-- <script type="text/javascript" src="/app.js"></script> -->
 </body>
